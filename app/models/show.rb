@@ -8,17 +8,17 @@ class Show < ActiveRecord::Base
     self.find_by rating: 10
   end
 
-  def lowest_rating
+  def self.lowest_rating
     self.find_by.minimum("rating")
   end
 
-  def least_popular_show
+  def self.least_popular_show
   end
 
-  def ratings_sum
+  def self.ratings_sum
   end
 
-  def popular_shows
+  def self.popular_shows
   end
 
   def shows_by_alphabetical_order
